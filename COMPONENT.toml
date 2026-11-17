@@ -3,7 +3,7 @@ name = "SigmaOS-msg-queues"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "msg-queues component"
+description = "msg queues component"
 upstream = []
 
 [contract]
