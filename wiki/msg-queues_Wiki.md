@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-msg-queues Component Wiki
+# SigmaOS-msg-queues Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-msg-queues provides msg queues component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-msg-queues provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-msg-queues Abstraction
-- Fail-Fast on SigmaOS-msg-queues Initialization Errors
-- Deterministic SigmaOS-msg-queues Setup
-- Clear Abstraction Over SigmaOS-msg-queues APIs
-- Composition over Inheritance for SigmaOS-msg-queues extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-msg-queues Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-msg-queues Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-msg-queues Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-msg-queues APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-msg-queues extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-msg-queues follows a SigmaOS-msg-queues pattern:
+SigmaOS-msg-queues follows a SigmaOS-msg-queues pattern:
 - **SigmaOS-msg-queues Core**: Provides SigmaOS-msg-queues support, SigmaOS-msg-queues management, and SigmaOS-msg-queues tracking
 - **Management**: Supports SigmaOS-msg-queues management, SigmaOS-msg-queues configuration, and SigmaOS-msg-queues lifecycle
 - **Tracking**: Supports SigmaOS-msg-queues status, SigmaOS-msg-queues tracking, and SigmaOS-msg-queues lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-msg-queues follows a SigmaOS-msg-queues pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-msg-queues by given configuration
--  - Register a SigmaOS-msg-queues by given name
--  - Get SigmaOS-msg-queues status and SigmaOS-msg-queues availability
--  - Track SigmaOS-msg-queues management and SigmaOS-msg-queues tracking
+- Manage a SigmaOS-msg-queues by given configuration
+- Register a SigmaOS-msg-queues by given name
+- Get SigmaOS-msg-queues status and SigmaOS-msg-queues availability
+- Track SigmaOS-msg-queues management and SigmaOS-msg-queues tracking
 - Error types for SigmaOS-msg-queues failure scenarios or unsupported SigmaOS-msg-queues types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-msg-queues init, SigmaOS-msg-queues management)
 3. **Assert**: Verify the expected SigmaOS-msg-queues results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-msg-queues initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-msg-queues failure scenarios
 - Unit tests provided for SigmaOS-msg-queues management and configuration
